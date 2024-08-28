@@ -1,5 +1,4 @@
-﻿
-using Learning;
+﻿using Calculator;
 
 namespace HelloWorld
 {

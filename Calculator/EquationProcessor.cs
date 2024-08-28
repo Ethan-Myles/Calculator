@@ -1,8 +1,6 @@
-﻿
-using System.Linq.Expressions;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
-namespace Learning
+namespace Calculator
 {
     public class Processor
     {
