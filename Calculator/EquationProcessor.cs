@@ -96,11 +96,11 @@ namespace Calculator
                         break;
                     }
 
-                case "sd":
+                case "var":
 
                     if (CheckFormats("variation"))
                     {
-                        Console.WriteLine("\nThe standard deviation is " + ComputeSdAndVar(words[1], words[2], true) + "\n");
+                        Console.WriteLine("\nThe variance is " + ComputeVarAndSd(words[1], words[2], false) + "\n");
                         break;
                     }
                     else
@@ -108,11 +108,11 @@ namespace Calculator
                         break;
                     }
 
-                case "var":
+                case "sd":
 
                     if (CheckFormats("variation"))
                     {
-                        Console.WriteLine("\nThe variance is " + ComputeSdAndVar(words[1], words[2], false) + "\n");
+                        Console.WriteLine("\nThe standard deviation is " + ComputeVarAndSd(words[1], words[2], true) + "\n");
                         break;
                     }
                     else
@@ -308,7 +308,7 @@ namespace Calculator
                 return range;
             }
 
-            static double ComputeSdAndVar(string sampleOrPopulation, string doublestring, bool sd)
+            static double ComputeVarAndSd(string sampleOrPopulation, string doublestring, bool sd)
             {
 
                 if (sampleOrPopulation != "s" && sampleOrPopulation != "p")
